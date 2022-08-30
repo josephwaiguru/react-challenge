@@ -318,7 +318,7 @@ function App() {
 
       <div className="grid">
         {data.map((item) => (
-          <div className="item">
+          <div className="item" key={item.source_items.id}>
             <img
               src={item.social_media_pages.picture}
               alt={item.social_media_pages.name}
